@@ -1,0 +1,396 @@
+.detail-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.all-detail{
+    width: 75rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
+.all-detail .detail-name h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.all-detail hr{
+    background-color: #f5f5f5;
+    margin: 10px 0 15px;
+}
+.all-detail .detail-content{
+    display: flex;
+    justify-content: space-between;
+}
+.all-detail .detail-content .detail-left{
+    float: left;
+    width: 45rem;
+}
+.all-detail .detail-content .detail-left .image{
+    text-align: center;
+    width: 100%;
+    height: 24.875rem;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.all-detail .detail-content .detail-left .image .sold-out{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    scale: 1.3;
+}
+.all-detail .detail-content .detail-left .image img,
+.all-detail .detail-content .detail-left .image .sold-out img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.all-detail .detail-content .detail-left .image .love i{
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.all-detail .detail-content .detail-left .image .love i:hover{
+    color: red!important;
+}
+.all-detail .detail-content .detail-left .information{
+    display: flex;
+}
+.all-detail .detail-content .detail-left .information .product-information{
+    width: 21.75rem;
+    height: 20.375rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 10px 0;
+    float: left;
+    margin-right: 1rem;
+}
+.all-detail .detail-content .detail-left .product-information h5{
+    font-weight: bold;
+}
+.all-detail .detail-content .detail-left .store{
+    width: 21.75rem;
+    height: 20.375rem;
+}
+.all-detail .detail-content .detail-left .store table{
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.all-detail .detail-content .detail-right{
+    float: right;
+    width: 28.75rem;
+}
+.all-detail .detail-content .detail-right .memory,
+.all-detail .detail-content .detail-right .color{
+    width: 100%;
+    height:  7.625rem;
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.all-detail .detail-content .detail-right .memory .memory-item{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    position: relative;
+}
+.all-detail .detail-content .detail-right .memory .memory-item i{
+    color: #d70018 !important;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+.all-detail .detail-content .detail-right .memory .memory-item.active i{
+    display: block;
+}
+.all-detail .detail-content .detail-right .color .color-item i{
+    color: #d70018 !important;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+.all-detail .detail-content .detail-right .color .color-item{
+    display: flex;
+    position: relative;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+}
+.all-detail .detail-content .detail-right .memory .memory-item p{
+    font-size: 0.75rem;
+    align-items: center;
+    text-align: center;
+    color: #444;
+}
+.all-detail .detail-content .detail-right .color .color-item.active i{
+    display: block;
+}
+.all-detail .detail-content .detail-right .memory .memory-item.active,
+.all-detail .detail-content .detail-right .color .color-item.active{
+    border: 1px solid #d70018;
+}
+.all-detail .detail-content .detail-right .color .color-item p{
+    font-size: 0.75rem;
+    color: #444;
+    margin-top: 0.2rem;
+}
+.all-detail .detail-content .detail-right .color .color-item img{
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+    margin-right: 1rem;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+.all-detail .detail-content .detail-right .promotion .title h6{
+    background-color: #fee2e2;
+    color: #d70018;
+    line-height:2.625rem ;
+}
+.all-detail .detail-content .detail-right .promotion .title{
+    width: 100%;
+    height: 2.625rem;
+}
+.all-detail .detail-content .detail-right .promotion{
+    border: 1px solid #fee2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.all-detail .detail-content .detail-right .promotion .content{
+    height: 7.75rem;
+}
+.all-detail .detail-content .detail-right .promotion .content .content-item{
+    display: flex;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.all-detail .detail-content .detail-right .promotion .content .content-item b{
+    height: 25px;
+    border-radius: 100%;
+    width: 25px;
+    text-align: center;
+    background-color: #cc0f35;
+    color: #fff;
+}
+.all-detail .detail-content .detail-right .promotion .content .content-item:hover{
+    text-decoration: underline;
+}
+.all-detail .detail-content .detail-right .payment{
+    display: flex;
+}
+.all-detail .detail-content .detail-right .payment .buy-now{
+    width: 24.375rem;
+    height: 3.75rem;
+    background: linear-gradient(#f52f32,#e11b1e);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+}
+.all-detail .detail-content .detail-right .payment .btn-sold-out{
+    background: linear-gradient(#f52f32,#e11b1e);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+}
+.all-detail .detail-content .detail- .payment .buy-now b,
+.all-detail .detail-content .detail-right .payment .btn-sold-out b{
+    font-size: 1.3rem;
+}
+.all-detail .detail-content .detail-right .payment .add-to-cart{
+    height: 3.75rem;
+    width: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: initial;
+    border: 2px solid #e04040;
+    border-radius: 10px;
+}
+.all-detail .detail-content .detail-right .payment .add-to-cart i{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #e04040;
+}
+.all-detail .detail-content .detail-right .payment .add-to-cart p{
+    font-size: 0.53rem;
+    text-align: center;
+    color: #e04040;
+}
+.specifications table th{
+    width: 30%;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+.specifications table td{
+    width: 70%;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+.similar-product{
+    padding: 2rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.803);
+    border-radius: 20px;
+}
+.similar-product .card-product{
+    display: flex;
+    flex-direction: column;
+    width: 14.5rem;
+    height: 25rem;
+    padding-top: 2rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.803);
+    border-radius: 7px;
+    position: relative;
+    margin-right: 5rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+.similar-product .card-product .card-image{
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.similar-product .card-product .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.similar-product .card-product .card-name{
+    margin:0.5rem 0rem 0rem 0.5rem;
+    font-size: 1rem;
+}
+.similar-product .card-product .card-feature{
+    display: flex;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+.similar-product .card-product .card-feature .item{
+    padding: 0rem 0.2rem;
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-right: 0.7rem;
+}
+.similar-product .card-product .price-cost{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.similar-product .card-product .price-cost .price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: red;
+    margin-right: 0.5rem;
+}
+.similar-product .card-product .price-cost .cost{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #707070;
+    text-decoration: line-through;
+}
+.similar-product .card-product .love{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.similar-product .card-product .love:hover i{
+    color: red!important;
+}
+@media screen and (max-width:1200px) {
+    .all-detail{
+        width: 70%;
+    }
+    .all-detail .detail-content{
+        flex-direction: column;
+    }
+    .all-detail .detail-content .detail-left{
+        width: auto;
+    }
+    .all-detail .detail-content .detail-left .information{
+        flex-direction: column;
+    }
+    .all-detail .detail-content .detail-left .information .product-information{
+        width: 100%;
+        height: 12rem;
+        margin: 0;
+    }
+    .all-detail .detail-content .detail-left .information .store{
+        width: 100%;
+    }
+    .all-detail .detail-content .detail-left .information .store table{
+        width: 100%;
+    }
+    .all-detail .detail-content .detail-left .information .store table tbody tr td{
+        width: 1%;
+    }
+    .all-detail .detail-content .detail-right{
+        width: 100%;
+        height: fit-content;
+        margin-top: -5rem;
+    }
+    .all-detail .detail-content .detail-right .memory{
+        height: 7rem;
+    }
+    .all-detail .detail-content .detail-right .color{
+        height: 8rem;
+    }
+    .all-detail .detail-content .detail-right .payment .buy-now{
+        width: 90%;
+    }
+}
+@media screen and (max-width:965px) {
+    .all-detail .detail-content .detail-right .payment .buy-now{
+        display: block;
+    }
+}
+@media screen and (max-width:758px) {
+    .all-detail .detail-content .detail-left .information .product-information{
+        height: auto;
+    }
+    .all-detail .detail-content .detail-left .information .store{
+        height: auto;
+    }
+    .all-detail .detail-content .detail-right{
+        height: auto;
+        margin-top: 0;
+    }
+    .all-detail .detail-content .detail-right .memory,
+    .all-detail .detail-content .detail-right .color{
+        height: auto;
+    }
+}
+@media screen and (max-width:560px) {
+    .all-detail .detail-content .detail-right .promotion .content{
+        height: auto;
+    }
+    .all-detail .detail-content .detail-right .payment .buy-now,
+    .all-detail .detail-content .detail-right .payment .add-to-cart{
+        height: auto;
+    }
+}

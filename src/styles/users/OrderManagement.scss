@@ -1,0 +1,45 @@
+.all-manage .manage .title .title-item{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #666;
+}
+.all-manage .manage .title .parameter{
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.all-manage .manage .title .parameter .parameter-item{
+    color: #ff0000;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.all-manage .manage .menu{
+    border-radius: 10px;
+    padding: 0.8rem;
+    border: 2px solid #666;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-manage .manage .menu .menu-item{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.all-manage .manage .menu .menu-item.selected{
+    color: red !important;
+}
+.all-manage .manage .list-order{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-manage .manage .list-order table{
+    width: 100%;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+}

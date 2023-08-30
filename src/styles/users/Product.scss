@@ -1,0 +1,167 @@
+.container-fluid{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.all-product{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.all-product .result{
+    width: 82%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.product .card-product{
+    display: flex;
+    flex-direction: column;
+    width: 14.5rem;
+    height: 25rem;
+    padding-top: 2rem;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 7px;
+    position: relative;
+    margin-right: 5rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+.product .card-product .card-image{
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product .card-product .sold-out{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    scale: 1.2;
+}
+.product .card-product .sold-out img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product .card-product .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .card-product .card-name{
+    margin:0.5rem 0rem 0rem 0.5rem;
+    font-size: 1rem;
+}
+.product .card-product .card-feature{
+    display: flex;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+.product .card-product .card-feature .item{
+    padding: 0rem 0.2rem;
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-right: 0.7rem;
+}
+.product .card-product .price-cost{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.product .card-product .price-cost .price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: red;
+    margin-right: 0.5rem;
+}
+.product .card-product .price-cost .cost{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #707070;
+    text-decoration: line-through;
+}
+.product .card-product .love{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.product .card-product .love:hover i{
+    color: red!important;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+}
+.sort b{
+    font-size: 1.3rem;
+}
+.sort .icon-sort{
+    display: flex;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: -3rem;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: #222;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+@media screen and (max-width:1249px) {
+    .product .card-product{
+        width: auto;
+        height: auto;
+    }
+    .all-product{
+        width: 90%;
+    }
+    .product{
+        width: 100%;
+    }
+    .product .card-product{
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

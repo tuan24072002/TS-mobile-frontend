@@ -1,0 +1,174 @@
+.all-payment{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.all-payment .payment{
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.all-payment .payment .title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.all-payment .payment hr{
+    background-color: #f5f5f5;
+    margin: 10px 0 15px;
+}
+.all-payment .payment .title .giohang{
+    font-size: 2rem;
+}
+.all-payment .payment .title h3{
+    color: #222;
+}
+
+.all-payment .payment .payment-content .top{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.all-payment .payment .payment-content .top .icon{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+.all-payment .payment .payment-content .top .icon i{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    border-radius: 100%;
+}
+.all-payment .payment .payment-content .content{
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.all-payment .payment .payment-content .content .order-information .center{
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+}
+.all-payment .payment .payment-content .content .order-information .center table{
+    width: 90%;
+}
+.all-payment .payment .payment-content .content .order-information .center table tr th{
+    width: 30%;
+}
+.all-payment .payment .payment-content .content .order-information .center table tr td{
+    word-break: break-all;
+}
+
+.all-payment .payment .payment-content .content .payment-method .method-item{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1rem;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .fa-circle-check{
+    color: red !important;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    display: none;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item{
+    display: flex;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 48%;
+    cursor: pointer;
+    position: relative;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .title{
+    height: fit-content;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .title p{
+    font-size: 1rem;
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .icon{
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .icon i{
+    font-size: 2.5rem;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item.selected .fa-circle-check{
+    display: block;
+}
+.all-payment .payment .payment-content .content .payment-method .method-item .item.selected{
+    border: 1px solid red;
+}
+.all-payment .payment .payment-content .content .payment .button-payment{
+    width: 85%;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+.all-payment .payment .payment-content .content .payment .button-payment button{
+    background: linear-gradient(#f52f32, #e11b1e);
+    width: 100%;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 850px) {
+    .all-payment .payment{
+        width: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .all-payment .payment .payment-content .content .top span{
+        display: none;
+    }
+    .all-payment .payment .payment-content .content .payment-method .method-item{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .all-payment .payment .payment-content .content .payment-method .method-item .item{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 555px) {
+    .all-payment .payment .payment-content .content .payment .button-payment{
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .all-payment .payment .payment-content .top{
+        display: none;
+    }
+    .all-payment .payment .payment-content .top .icon{
+        display: none;
+    }
+    .all-payment .payment .title .giohang{
+        font-size: 1.5rem;
+    }
+}

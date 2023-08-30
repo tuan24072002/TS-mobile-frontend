@@ -1,0 +1,45 @@
+.all-order-management{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.all-order-management .top{
+    height: fit-content;
+}
+.all-order-management .table-order{
+    padding:0 2rem 0 2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.all-order-management .table-order .finish p{
+    padding: 0.3rem 0.8rem;
+    border: 2px solid rgb(21, 0, 255);
+    border-radius: 10px;
+}
+.all-order-management .table-order table tbody tr td{
+    font-size: 0.9rem;
+}
+.all-order-management .table-order table tbody tr:hover td{
+    color: red;
+    cursor: pointer;
+}
+.all-order-management .table-order table thead tr th:hover{
+    cursor: pointer;
+}
+.all-order-management .bottom {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 10rem;
+}
+.all-order-management .bottom .info{
+    font-size: 1.2rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.all-order-management .bottom .info div p{
+    cursor: pointer;
+}
+.all-order-management .bottom .info div p:hover b{
+    color: red;
+}

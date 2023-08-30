@@ -1,0 +1,15 @@
+.modal-dialog-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-dialog-centered .title{
+    background-color: #666;
+}
+.modal-dialog-centered .title b{
+    color: #fff;
+    font-weight: bold;
+}
+.modal-dialog-centered p{
+    font-size: 1.2rem;
+}

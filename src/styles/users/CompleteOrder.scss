@@ -1,0 +1,171 @@
+.all-complete{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.all-complete .complete{
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.all-complete .complete .title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.all-complete .complete hr{
+    background-color: #f5f5f5;
+    margin: 10px 0 15px;
+}
+.all-complete .complete .title .giohang{
+    font-size: 2rem;
+}
+.all-complete .complete .title h3{
+    color: #222;
+}
+
+.all-complete .complete .complete-content .top{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.all-complete .complete .complete-content .top .icon{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+.all-complete .complete .complete-content .top .icon i{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    border-radius: 100%;
+}.all-complete .complete .complete-content .content{
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.all-complete .complete .complete-content .fail-order{
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    background: #edd4d4;
+}
+.all-complete .complete .complete-content .complete-order{
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+    background: #d4edda;
+}
+.all-complete .complete .complete-content .complete-order .title{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #95c39f;
+}
+.all-complete .complete .complete-content .fail-order .title{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #efb4b4;
+}
+.all-complete .complete .complete-content .complete-order table{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.all-complete .complete .complete-content .complete-order table tr th{
+    width: 70%;
+}
+.all-complete .complete .complete-content .complete-order table tr td{
+    word-break: break-all;
+}
+.all-complete .complete .complete-content .card .card-complete .card-image{
+    width: 10rem;
+    height: 10rem;
+}
+.all-complete .complete .complete-content .card .card-complete .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.all-complete .complete .complete-content .card .card-complete .card-content{
+    gap: 0.5rem;
+}
+.all-complete .complete .complete-content .card .card-complete .card-content .card-name{
+    font-size: 1.3rem;
+}
+.all-complete .complete .complete-content .card .card-complete .card-content .price-cost,
+.all-complete .complete .complete-content .card .card-complete .card-content .card-quantity,
+.all-complete .complete .complete-content .card .card-complete .card-content .subtotal{
+    font-size: 1.1rem;
+}
+.all-complete .complete .complete-content .card .card-complete .card-content .price-cost .cost{
+    text-decoration: line-through;
+}
+.all-complete .complete .complete-content .card .card-complete{
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.25);
+}
+.all-complete .complete .complete-content .action{
+    justify-content: space-between;
+}
+.all-complete .complete .complete-content .action .check-order,
+.all-complete .complete .complete-content .action .continue-shoping{
+    width: 48%;
+}
+.all-complete .complete .complete-content .action .check-order .btn,
+.all-complete .complete .complete-content .action .continue-shoping .btn{
+    width: 100%;
+}
+.all-complete .complete .complete-content .action .check-order  .title,
+.all-complete .complete .complete-content .action .check-order .icon,
+.all-complete .complete .complete-content .action .continue-shoping .btn .title,
+.all-complete .complete .complete-content .action .continue-shoping .btn .icon{
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 850px) {
+    .all-complete .complete{
+        width: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .all-complete .complete .complete-content .content .top span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .all-complete .complete .complete-content .top{
+        display: none;
+    }
+    .all-complete .complete .complete-content .top .icon{
+        display: none;
+    }
+    .all-complete .complete .title .giohang{
+        font-size: 1.5rem;
+    }
+    .all-complete .complete .complete-content .complete-order .title{
+        font-size: 1.5rem;
+    }
+    .all-complete .complete .complete-content .card .card-complete .card-content .card-name{
+        font-size: 1rem;
+    }
+    .all-complete .complete .complete-content .card .card-complete .card-content .price-cost,
+    .all-complete .complete .complete-content .card .card-complete .card-content .card-quantity,
+    .all-complete .complete .complete-content .card .card-complete .card-content .subtotal{
+        font-size: 0.8rem;
+    }
+    .all-complete .complete .complete-content .card .card-complete .card-image img{
+        scale: 1.1;
+    }
+}
